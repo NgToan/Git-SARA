@@ -17,6 +17,7 @@ class Project:
     validation_leaders = SetField(Agent, default=[missingAgent])
     version = StringField(default="0.0.1")
 
+    # Méthode appelée en cas d'action sample, le template ci-dessous est créé
     @staticmethod
     def sample():
         return Project(name='My Project',
@@ -68,6 +69,7 @@ class Document:
     def configure_from_project(self, project):
         self.title = self.title_template.format(name=project.name)
 
+    # Méthode appelée en cas d'action sample, le template ci-dessous est créé
     @staticmethod
     def sample():
         d = Document("document title")
