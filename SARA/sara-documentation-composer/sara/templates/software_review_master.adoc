@@ -1,0 +1,103 @@
+{% extends "master.adoc" %}
+
+{%block body%}
+
+== Purpose and scope
+
+The purpose of this document is to describe the results obtained in the software quality analysis and code inspection of the {LONG_DESCRIPTION} software product.
+
+
+First objective is to HELP the development team. +
+Please contribute to improve this report. +
+Any comments, ideas are welcome !
+
+Other objectives are:
+
+* Deliver a Quality status on the code;
+* Communicate it to the code authors, the whole development team and managers;
+* Possibly set-up action plan for improvement.
+
+
+For each of the measurements, we cover the following items:
+
+* What is measured and why;
+* The measurement tool(s) used;
+* The measurement results;
+* An analysis of the results and, potentially, actions to be carried out.
+
+The conclusions are derived from good practices and should be taken as a guide instead of a prescription.
+
+__This analysis has been done without knowledge (science, SW implementation...) on this project. Please do not hesitate to mention any error or misunderstanding.__
+
+
+[IMPORTANT]
+====
+Feedback from the development team would be very appreciated.
+
+====
+
+=== Summary: strengths and weaknesses of the product
+
+
+{% include ['strengths_and_weaknesses_of_the_product.adoc',
+            'sections/default_strengths_and_weaknesses_of_the_product.adoc'] %}
+
+===	Information on the project and product analysed
+
+====	Context of the analysis: periodic software quality analysis
+
+This analysis has been done within the frame of periodic software quality analyses,
+at least one per year, or one per minor version number (m in number version M.m.p).
+
+==== Development team and stakeholders
+
+The table below lists the main stakeholders of the product analysed:
+
+
+[width="100%"]
+|====================
+| Product lead	                 | {{project.leaders | join(', ', attribute='name')}}
+| Product implementation lead	 | {{project.implementation_leaders | join(', ', attribute='name')}}
+| Product validation lead	     | {{project.validation_leaders | join(', ', attribute='name')}}
+|====================
+
+=== Applicable documents
+
+{% with references=doc.applicable_documents, prefix='AD'%}
+    {%- include 'fragments/document_table.adoc' %}
+{% endwith %}
+
+=== Reference documents
+
+{% with references=doc.reference_documents, prefix='RD'%}
+    {%- include 'fragments/document_table.adoc' %}
+{% endwith %}
+
+
+==	Analysis tools and source code inputs
+
+===	Environment
+
+=== Code analysed
+
+=== Code top-level structure
+
+=== Product size and category
+
+==	CODEEN compliance
+
+===	Configuration management
+
+===	Product documentation
+
+===	Generation
+
+===	Compliance with the Elements framework
+
+==	Maintainability
+
+===	Dependencies
+
+
+
+{% endblock %}

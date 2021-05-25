@@ -1,0 +1,8 @@
+related
+Jinja2==2.10
+PyYAML==3.13
+pytest
+pandoc==2.0a4
+pandas
+lxml
+openpyxl

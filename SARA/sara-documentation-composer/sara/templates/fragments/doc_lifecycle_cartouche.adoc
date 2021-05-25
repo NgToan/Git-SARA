@@ -1,0 +1,78 @@
+//
+// Documentation lifecycle cartouche
+//
+
+[cols="2a,1a,1a",stripes="none"]
+|=============================================
+|
+[cols="1,1"]
+!====
+!*Prepared by*: ! -
+!====
+|*Date*: | Signature
+|
+[cols="1,1"]
+!=====
+//{% for prep in doc.preparations %}
+! {{prep.name}} ! {{prep.function}}
+!=====
+| {{prep.date}} | -
+//{% endfor %}
+
+|
+[cols="1,1"]
+!======
+!*Contributors*: ! -
+!======
+
+|*Date*: | -
+//{% for cont in doc.contributions %}
+| {{cont.name}} | {{cont.date}} |.
+//{% endfor %}
+
+|
+[cols="1,1"]
+!=======
+!*Approved*: ! -
+!=======
+
+|*Date*: | Signature
+
+|
+[cols="1,1"]
+!========
+//{% for app in doc.approbations %}
+! {{app.name}} ! {{app.function}}
+!========
+| {{app.date}} | -
+//{% endfor %}
+
+|=============================================
+
+
+
+
+////
+//
+// Documentation lifecycle cartouche
+//
+
+[stripes="none"]]
+|=============================================
+|*Prepared by*: | - |*Date*: | Signature
+//{% for prep in doc.preparations %}
+| {{prep.name}} | {{prep.function}} | {{prep.date}} | -
+//{% endfor %}
+
+|*Contributors*: | - |*Date*: | -
+//{% for cont in doc.contributions %}
+|{{cont.name}}|  | {{cont.date}} |.
+//{% endfor %}
+
+|*Approved*: | - |*Date*: | Signature
+//{% for app in doc.approbations %}
+| {{app.name}} | {{app.function}} | {{app.date}} | -
+//{% endfor %}
+|=============================================
+
+////

@@ -1,0 +1,7 @@
+[width="100%",options="header",cols="1,5,5,2,2"]
+|====================
+| {{prefix}} | Title      | Document Reference | Issue | Date
+//{% for ref in references %}
+| {{ref.id}} | {{ref.title}}  | {{ref.document_reference}} | {{ref.issue}} | {{ref.date}}
+//{% endfor %}
+|====================

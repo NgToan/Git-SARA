@@ -1,0 +1,5 @@
+name: 'My PROJECT'
+long_name: 'A very long name for such a small project'
+leaders:
+    - name: John Doe
+    - name: Jeanne Doe

@@ -1,0 +1,29 @@
+[INFO]
+====
+
+*Here we push the instructions and explanations :*
+
+Please create +
+'_strengths_and_weaknesses_of_the_product.adoc_' +
+document with the too subsections :
+
+* Top priority
+* Other recommendations
+
+====
+
+
+
+==== Top priority
+
+* Use a _linter_ or _pylint_ to resolve the undefined variable problems (see _Code issues_ section)
+* Refactor `LE3_DET_CL_PZWav` to separate concerns and make process readable.
+* Improve coverage of critical components.
+
+==== Other recommendations
+
+* Remove commented out code.
+* Use a accessible managed list of issue.
+* Make the unit test more readbale using _the given,when,then_ pattern.
+
+

@@ -1,0 +1,76 @@
+title: document title
+version: '1.0'
+date: 2019-01-30
+reference: REC-FOO-A
+custodian: mister.custodian
+
+applicable_documents:
+  - id: AD1
+    title: EC SGS Coding Standards
+    document_reference: EUCL-CNE-RD-8-001
+    issue: 1.1
+    date: 2019-07-19
+
+applicable_documents:
+  - id: AD1
+    title: EC SGS Coding Standards
+    document_reference: EUCL-CNE-RD-8-001
+    issue: 1.1
+    date: 2019-07-19
+
+preparations:
+  - name: John Doe
+    description: Preparation of review
+    role: Leader
+    date: '2019-01-01'
+contributions:
+  - name: John Doe
+    description: Preparation of review
+    role: Leader
+    date: '2019-01-01'
+  - name: John Doe
+    description: Preparation of review
+    role: Leader
+    date: '2019-01-01'
+  - name: John Doe
+    description: Preparation of review
+    role: Leader
+    date: '2019-01-01'
+approbations:
+  - name: John Doe
+    description: Preparation of review
+    role: Leader
+    date: '2019-01-01'
+issues:
+  - id: '0.1'
+    description: Typo
+    date: '2018-11-01'
+    comment: file to view the source code until proper documentation is generated.
+    page:
+      - '2'
+  - id: '0.2'
+    description: Typo very long
+    date: '2018-11-01'
+    comment: balbalbalbalbalb
+    page:
+    - '2'
+  - id: '0.3'
+    description: Typo
+    date: '2018-11-01'
+    comment: datetime field formatted using formatter.
+    page:
+    - '2'
+    - '3'
+  - id: '0.4'
+    description: Typo
+    date: '2018-11-01'
+    comment: balbalbalbalbalb
+    page:
+    - '2'
+  - id: '0.5'
+    description: Typo
+    date: '2018-11-01'
+    comment: 'Adding your own field types is fairly straightforward '
+    page:
+    - '2'
+title_template: Document about {name}

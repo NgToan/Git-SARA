@@ -1,0 +1,39 @@
+//
+// Documentation identification cartouche
+//
+
+[cols="1,6a", stripes="none"]
+|=============================================
+|*Title* :
+| {{doc.title}}
+|*Date*:
+|
+[cols="2,1,3"]
+!===
+! {{doc.date}}
+!*Issue*:
+! {{doc.version}}
+!===
+
+|*Reference*:
+|{{doc.reference}}
+|*Custodian*:
+| {{doc.custodian}}
+
+|=============================================
+
+
+
+////
+// Documentation identification cartouche
+//
+
+[cols="1,2,1,3", stripes="none", grid="all"]
+|=============================================
+|*Title* : | {{doc.title}} ||
+|*Date*: | {{doc.date}} |*Issue*: | {{doc.version}}
+|*Reference*: |{{doc.reference}} ||
+|*Custodian*: | {{doc.custodian}} ||
+|=============================================
+
+////

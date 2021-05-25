@@ -1,0 +1,11 @@
+//
+// Documentation lifecycle cartouche
+//
+
+[cols="1,1,1,3,4",stripes="none", frame="all"]]
+|=============================================
+| *Issue* | *Date* | *Page* | *Description of Change* | *Comment*
+//{% for issue in doc.issues %}
+| {{issue.id}} | {{issue.date}} | {{','.join(issue.page)}} | {{issue.description}} | {{issue.comment}}
+//{% endfor %}
+|=============================================
